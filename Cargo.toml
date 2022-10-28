@@ -4,5 +4,13 @@ version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+license="UNLICENSED"
+description="Taproot Asset Representation Overlay (Bitcoin)"
+homepage="https://github.com/judica-org/rust-taro"
+documentation="https://docs.rs/rust_taro"
+repository="https://github.com/judica-org/rust-taro"
+readme="README.md"
+
+
 
 [dependencies]
