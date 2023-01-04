@@ -1,3 +1,10 @@
+mod interface;
+mod errors;
+mod proof;
+mod node;
+mod store;
+mod context;
+
 pub fn add(left: usize, right: usize) -> usize {
     left + right
 }

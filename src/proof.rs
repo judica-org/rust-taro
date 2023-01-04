@@ -1,6 +1,6 @@
 use crate::{
     errors::InvalidProofError,
-    node::{self, BranchNode, LeafNode, Node},
+    node::{BranchNode, LeafNode, Node},
 };
 
 struct Key {}

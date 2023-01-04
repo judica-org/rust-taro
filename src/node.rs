@@ -35,8 +35,8 @@ pub enum Node<T, S> {
 // values.
 #[derive(Clone)]
 pub struct BranchNode<T, S> {
-    left: Arc<Node<T, S>>,
-    right: Arc<Node<T, S>>,
+    pub left: Arc<Node<T, S>>,
+    pub right: Arc<Node<T, S>>,
 }
 
 impl<T, S> BranchNode<T, S> {
@@ -121,7 +121,7 @@ pub struct LeafNode<T, S> {
 
 impl<T, S> LeafNode<T, S> {
     // NewLeafNode constructs a new leaf node.
-    fn new(value: T, sum: S) -> Self {
+    pub fn new(value: T, sum: S) -> Self {
         LeafNode { value, sum }
     }
 
@@ -220,7 +220,7 @@ impl<T, S> CompactedLeafNode<T, S> {
         self.key
     }
 
-    fn node_hash(&self) -> NodeHash {
+    pub fn node_hash(&self) -> NodeHash {
         self.compacted_node_hash
     }
 
